@@ -245,7 +245,7 @@ const projects = [
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
             {
-                name: "nextjs",
+                name: "nextJS",
                 color: "blue-text-gradient",
             },
             {
@@ -262,4 +262,19 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const tabs = [
+    {
+        name: 'All',
+        filter: () => true,
+    },
+    {
+        name: 'react',
+        filter: (project) => project.tags.some(tag => tag.name === 'react'),
+    },
+    {
+        name: 'nextJS',
+        filter: (project) => project.tags.some(tag => tag.name === 'nextJS'),
+    },
+];
+
+export { services, technologies, experiences, testimonials, projects, tabs };
