@@ -35,6 +35,7 @@ const TechCard = ({index,name,icon}) =>(
         <motion.div
             variants={fadeIn("top","spring",index*0.5,0.75)}
             className='w-full bg-gradient-to-r from-fuchsia-500 to-cyan-500 p-[1px] rounded-full shadow-card'
+            title={name}
         >
             <div
                 options={{
@@ -47,6 +48,7 @@ const TechCard = ({index,name,icon}) =>(
                 <img
                     src={icon}
                     className={"w-12 h-12 object-contain"}
+                    alt={name}
                 />
 
             </div>
