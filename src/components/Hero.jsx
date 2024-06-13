@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {motion} from "framer-motion";
 import {styles} from "../styles.js";
 import {ComputersCanvas} from "./canvas";
-import {TypewriterEffectSmooth} from "./ui/typewriter-effect.jsx";
+import {TypewriterEffectSmooth, TypewriterEffect} from "./ui/typewriter-effect.jsx";
 
 
 const Hero = () => {
